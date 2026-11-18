@@ -9,5 +9,5 @@ class Solution:
         
     def get_error(self, model_prediction: NDArray[np.float64], ground_truth: NDArray[np.float64]) -> float:
         error = np.mean((model_prediction-ground_truth)**2)
-        return np.round(float(error),5)
+        return np.round(error,5)
      
